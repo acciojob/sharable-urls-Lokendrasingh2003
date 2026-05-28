@@ -12,7 +12,7 @@ form.addEventListener("submit",function(e){
 		
 	}
 	if(yearInput.value.trim()!==""){
-		params,push(`year=${yearInput.value}`)
+		params.push(`year=${yearInput.value}`)
 	}
 	if(params.length>0){
 		baseUrl += "?" + params.join("&")
